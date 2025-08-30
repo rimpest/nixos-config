@@ -1,0 +1,7 @@
+result
+result-*
+*.swp
+.direnv/
+.envrc
+hardware-configuration.nix  # Optional: if you want to keep hardware config separate
+flake.lock
