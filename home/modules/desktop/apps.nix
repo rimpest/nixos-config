@@ -11,7 +11,7 @@
     
     # Communication
     teams-for-linux
-    whatsapp-for-linux
+    wasistlos  # WhatsApp client (formerly whatsapp-for-linux)
     
     # Claude Desktop
     inputs.claude-desktop.packages.${pkgs.system}.claude-desktop-with-fhs
