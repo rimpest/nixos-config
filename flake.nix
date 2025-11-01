@@ -3,26 +3,32 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    
+
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-    
+
     claude-desktop = {
       url = "github:k3d3/claude-desktop-linux-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    
+
     onepassword-shell-plugins = {
       url = "github:1Password/shell-plugins";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    omarchy-nix = {
+      url = "github:henrysipp/omarchy-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, nixos-hardware, claude-desktop, onepassword-shell-plugins, ... }@inputs: 
+  outputs = { self, nixpkgs, home-manager, nixos-hardware, claude-desktop, onepassword-shell-plugins, omarchy-nix, ... }@inputs: 
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};

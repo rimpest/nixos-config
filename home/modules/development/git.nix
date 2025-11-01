@@ -1,10 +1,11 @@
 { config, pkgs, lib, ... }:
 
 {
+  # Omarchy provides basic git config, this adds GPG signing with 1Password
   programs.git = {
-    enable = true;
-    userName = "rimpest-nix";
-    userEmail = "rimpest@gmail.com";
+    # Override omarchy git values if needed
+    userName = lib.mkForce "rimpest-nix";
+    userEmail = lib.mkForce "rimpest@gmail.com";
 
     extraConfig = {
       init.defaultBranch = "main";
