@@ -14,7 +14,7 @@
     ../../modules/networking
     
     # Desktop environment
-    ../../modules/desktop/gnome.nix
+    ../../modules/desktop/hyprland.nix
     
     # Services
     ../../modules/services/audio.nix

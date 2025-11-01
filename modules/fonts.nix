@@ -17,7 +17,7 @@
       enable = true;
       defaultFonts = {
         serif = [ "Liberation Serif" ];
-        sansSerif = [ "Liberation Sans" ];  # Will be overridden by user for GNOME
+        sansSerif = [ "Liberation Sans" ];
         monospace = [ "JetBrainsMonoNL Nerd Font" ];
       };
     };

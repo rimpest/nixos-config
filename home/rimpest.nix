@@ -9,7 +9,7 @@
     ./modules/fonts.nix
     
     # Desktop environment
-    ./modules/desktop/gnome.nix
+    ./modules/desktop/hyprland.nix
     ./modules/desktop/apps.nix
     
     # Terminal and shell
